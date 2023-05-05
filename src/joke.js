@@ -1,5 +1,16 @@
+import axios from 'axios';
+
 function generateJoke() {
-  return "Porque la gallina cruzó el camino?. Para llegar al otro lado";
+  const config = {
+    headers: {
+      Accept: 'application/json'
+    }
+  };
+
+  axios.get('https://icanhazdadjoke.com', config).then((res) => {
+    document.getElementById('joke').textContent = res.data.joke;
+  });
+
 }
 
 export default generateJoke;
