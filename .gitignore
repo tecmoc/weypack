@@ -1,6 +1,9 @@
 #Production files
 dist/
 
+#Others
+setups/
+
 #VSCode
 .vscode/
 
