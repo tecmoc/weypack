@@ -4,6 +4,9 @@ dist/
 #VSCode
 .vscode/
 
+#Others
+setups/
+
 # Logs
 logs
 *.log
